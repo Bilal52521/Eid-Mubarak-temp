@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#video_bg{
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;;
+}
+
+
+
+.container{
+    background: url(assets/eid-mubarak1.jpeg);
+    width: 600px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    border-radius: 10px;
+    display: flex;
+    align-items:flex-start;
+    color:#ebd660;
+    border: 2px solid white;
+    position: relative;
+    z-index: 1;
+}
+
+.container div{
+    padding: 20px 20px 0px 0px;
+    width: 80%;
+    padding: 10px 0px 0px 20px;
+}
+
+p{
+    margin: 20px 0px 5px 20px;
+    font-size: 20px;
+    font-family:cursive;
+    color: #fff;
+    text-shadow: 3px 3px 2px #000;
+}
+
+h2{
+    margin: 10px 0px 0px 15px;
+    color: whitesmoke;
+}
+
+
+h3{
+    margin: 30px 0px 0px 15px;
+    color: #007bff;
+}
+
+img{
+    z-index: -1;
+}
+
+
+
+
+/* Add your styles for the popup here */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+    
+
+
+
+/* =================================================================================== */
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    .container div {
+        width: 88%;
+        font-size: 16px;
+        padding: 40px 15px 0px 0px;
+    }
+    h1 {
+        margin: 5px 0px 10px 0px;
+    }
+    p {
+        margin: 15px 0px 15px 0px;
+    }
+    h2 {
+        margin: 10px 0px 0px 15px;
+    }
+    h3 {
+        margin: 40px 0px 0px 15px;
+    }
+}
+
+/* For screens between 601px and 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+    .container div {
+        width: 80%;
+        font-size: 16px;
+        padding: 20px 15px 0px 0px;
+    }
+    h1{
+        margin: 5px 0px 10px 10px;
+    }
+    p{
+        margin: 15px 0px 10px 39px;
+    }
+    h2{
+        margin: 10px 0px 0px 15px;
+    }
+    h3{
+        margin: 27px 0px 0px 15px;
+    }
+}
+
+/* For screens between 338px and 600px */
+@media (min-width: 531px) and (max-width: 600px) {
+    .container div {
+        width: 90%;
+        font-size: 16px;
+        padding: 30px 15px 0px 0px;
+        overflow: scroll;
+    }
+    h1{
+        margin: 5px 0px 10px 10px;
+    }
+    p{
+        margin: 15px 0px 15px 25px;
+    }
+    h2{
+        margin: 10px 0px 0px 20px;
+    }
+    h3{
+        margin: 20px 0px 0px 20px;
+    }
+    
+}
+
+
+
+
+@media (max-width: 530px){
+    .container div {
+        width: 100%;
+        padding:  15px 8px 0 6px;
+    }
+    h1{
+        margin: 5px 0px 10px 10px;
+    }
+    p{
+        margin: 15px 0px 10px 18px;
+        font-size: 20px;
+    }
+    h2{
+        margin: 10px 0px 0px 10px;
+    }
+    h3{
+        margin: 28px 0px 0px 10px;
+    }
+}
+
+
+@media (max-width: 553px){
+    .container div {
+        width: 100%;
+        padding:  10px 5px 0 5px;
+    }
+    h1{
+        margin: 5px 0px 10px 10px;
+    }
+    p{
+        margin: 15px 0px 10px 18px;
+        font-size: 18px;
+    }
+    h2{
+        margin: 10px 0px 0px 10px;
+    }
+    h3{
+        margin: 28px 0px 0px 10px;
+    }
+}
+
+
+
+@media (max-width: 385px){
+    .container div {
+        width: 100%;
+    }
+    h1{
+        margin: 0px 0px 10px 0px;
+    }
+    p{
+        margin: 12px 0px 10px 15px;
+        font-size: 17px;
+    }
+    h2{
+        margin: 10px 0px 0px 10px;
+    }
+    h3{
+        margin: 20px 0px 0px 10px;
+    }
+}
+
+
+
+
+/* For screens up to 337px */
+
+@media (max-width: 337px){
+    .container div {
+        width: 100%;
+    }
+    h1{
+        margin: 0px 0px 10px 0px;
+    }
+    p{
+        margin: 10px 0px 8px 15px;
+        font-size: 17px;
+    }
+    h2{
+        margin: 10px 0px 0px 10px;
+    }
+    h3{
+        margin: 20px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 337px){
+    .container div {
+        width: 100%;
+        padding-top: 10px;
+    }
+    h1{
+        margin: 0px 0px 10px 0px;
+    }
+    p{
+        margin: 8px 0px 7px 10px;
+        font-size: 17px;
+    }
+    h2{
+        margin: 10px 0px 0px 10px;
+    }
+    h3{
+        margin: 20px 0px 0px 10px;
+    }
+}
+
+
+/* For screens up to 267px */
+@media (max-width: 267px){
+    .container div {
+        width: 100%;
+        font-size: 15px;
+    }
+    h1{
+        margin: 5px 0px 10px 0px;
+    }
+    p{
+        margin: 10px 0px 10px 10px;
+    }
+    h2{
+        margin: 5px 0px 0px 10px;
+    }
+    h3{
+        margin: 10px 0px 0px 10px;
+    }
+}
